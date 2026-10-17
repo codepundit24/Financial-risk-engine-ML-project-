@@ -38,7 +38,7 @@ jobs:
 
         - name: Train pipeline & save model artifact
           run: |
-            python src/pipelin.py
+            python src/pipeline.py
 
         - name: Run pytest suite
           run: |
