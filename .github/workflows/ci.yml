@@ -41,8 +41,10 @@ jobs:
             python src/pipeline.py
 
         - name: Run pytest suite
+          env:
+            PYTHONPATH: .
           run: |
-            pytest -v
+            python -m pytest -v
 
         - name: build docker Image
           run: |
