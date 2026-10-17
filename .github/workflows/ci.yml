@@ -25,7 +25,7 @@ jobs:
             DEBIAN_FRONTEND: noninteractive
           run: |
             sudo apt-get update -y
-            sudo apt-get install -y --no-install-recommends lipgomp1
+            sudo apt-get install -y --no-install-recommends libgomp1
 
         - name: Install Python dependencies
           run: |
